@@ -10,6 +10,6 @@ RUN npm ci --only=development
 
 RUN npm install pm2 -g
 
-EXPOSE 4000
+EXPOSE 3000
 
 CMD ["pm2-runtime", "index.js"]
