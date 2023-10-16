@@ -1,1 +1,1 @@
-FROM node:lts-alpine3.18
+FROM timbru31/node-alpine-git
