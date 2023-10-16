@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t edwright6975df/mern-backend-docker'
+                sh 'docker build -t edwright6975df/mern-backend-docker .'
             }
         }
         stage('Login') {
