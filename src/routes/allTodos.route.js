@@ -1,9 +1,9 @@
 import express from 'express';
-import { allTodos } from '../controllers/allTodos.controller.js';
+import { getAllTodosController } from '../controllers/todos.controller.js';
 
 const router = express.Router();
 
 router.route(`/`)
-    .get(allTodos);
+    .get(getAllTodosController)
 
-export { router as allTodos };
+export { router as allTodosRouter };

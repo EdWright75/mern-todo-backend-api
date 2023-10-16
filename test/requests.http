@@ -1,0 +1,12 @@
+GET http://127.0.0.1:4000/todos
+
+###
+
+POST http://127.0.0.1:4000/todos
+content-type: application/json
+
+{
+    "todoDescription": "Newer Shiny Todo",
+    "todoDateCreated": "2023-09-11T13:19:00.000Z",
+    "todoCompleted": false
+}

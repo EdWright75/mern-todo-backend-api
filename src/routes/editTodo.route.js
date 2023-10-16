@@ -1,14 +1,12 @@
 import express from 'express';
-import { getSingleTodo, updateTodo } from '../controllers/singleTodo.controller.js';
+import { editTodoController } from '../controllers/todos.controller.js';
 import { updateTodoValidation } from '../middlewares/todos.validation.js';
-
 
 const router = express.Router();
 
 router.use(express.json());
 
 router.route('/:_id')
-    .get(getSingleTodo)
-    .put(updateTodoValidation, updateTodo);
+    .put(updateTodoValidation, editTodoController);
 
-export { router as singleTodo };
+export { router as editTodoRouter };
